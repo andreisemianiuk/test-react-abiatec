@@ -1,10 +1,16 @@
-const ContentList = ({ content }) => {
-  return (
-    <ul>
-      {/* TODO: Display content */}
-      {console.info(`Available content: ${content}`)}
-    </ul>
-  );
-};
+import "./index.css";
 
-export default ContentList;
+
+const ContentList = ({content}) => {
+  return (
+    <ul className="Content">
+      {content.map((v, i) =>
+        <li className="Image" key={i}>
+          <img src={v.image} alt={'some image'}/>
+        </li>,
+      )}
+    </ul>
+  )
+}
+
+export default ContentList

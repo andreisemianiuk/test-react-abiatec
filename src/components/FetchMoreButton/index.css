@@ -1,0 +1,6 @@
+.FetchMoreButton {
+	position: fixed;
+	z-index: 200;
+	bottom: 10px;
+	left: 50%;
+}
